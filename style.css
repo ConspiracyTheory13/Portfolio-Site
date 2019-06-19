@@ -61,7 +61,7 @@ li {
 }
 
 .headerBar {
-    background-color: darkgrey;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -70,7 +70,7 @@ li {
 
 section {
     margin-top: 10%;
-    background-color: darkgrey;
+    background-color: black;
     padding-left:0;
     padding-top: 10px;
     z-index: 1;
@@ -93,7 +93,7 @@ section {
 }
 
 .portfolioBox {
-    background-color: darkgrey;
+    background-color: black;
     /* align-items: left; */
 }
 
@@ -178,7 +178,7 @@ projectContainer {
 }
 
 .footerBar {
-    background-color: darkgrey;
+    background-color: black;
     left: 0;
     bottom: 0;
     width: 100%;
