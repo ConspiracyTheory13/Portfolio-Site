@@ -1,0 +1,52 @@
+    <!-- <div id="imageMapMobile"> -->
+                    <!-- <map name="mobileCootie" style="background-color: purple"> -->
+                            <!-- <area  href="https://facebook.com" alt="Facebook" target="_blank" shape=poly coords="30,100, 140,50, 290,220, 180,280"> -->
+                    <!-- </map>  -->
+                    <!-- <img src="cootie.svg" viewbox="0 0 852 1290" alt="A fortune teller" class="cootieHero"> -->
+                    <!-- <img class="cootieCatcherHeroImageMobile" src="CootiesCaught.png" usemap="#mobileCootie"></img> -->
+                <!-- </div> -->
+                
+                                     <div class="projectOneSlideshowContainer">
+                            <div class="ProjectOneSlideLeft">
+                                <!-- <div class="numbertext">1 / 3</div> -->
+                                <!-- <i class="arrow left"></i></p> -->
+                                <img class= "projectOneSlideLeft"></img> 
+                                <!-- <i class="arrow right"></i></p>   -->
+                                <!-- <div class="text">Description</div> -->
+                            </div>
+                                <div class="ProjectOneCenter">
+                                    <div class="numbertext">2 / 3</div>
+                                    <i class="arrow left"></i></p>
+                                    <img class= "projectOneCenter"></img>   
+                                    <i class="arrow right"></i></p>
+                                    <!-- <div class="text"> Description </div> -->
+                                </div>
+
+                            <div class="ProjectOneSlideRight">
+                                <div class="numbertext">3 / 3</div>
+                                <i class="arrow left"></i></p>
+                                <img class= "projectOneSlideRight"></img>   
+                                <i class="arrow right"></i></p>
+                                <!-- <div class="text">Description</div> -->
+                            </div>
+                        </div>
+
+                             
+                <!-- <div id="imageMapComputer">        
+                    <img class="cootieCatcherHeroImageTabletComputer" src="CootiesCaught.png" usemap= "#computerCootie"></img>
+                </div>
+                 -->
+                <!-- <map name="computerCootie"> </map>  -->
+            <!-- <div class="invisibleNavigator"> -->
+                <!-- <div class="portfolioContainer" id="catchCooties"> -->
+                    <!-- <a class="bioHyperLink" href="#bioBlock"></a>                
+                    <a class="githubHyperLink" href="https://github.com/ConspiracyTheory13"></a>
+                    <a class="portfolioHyperLink" href="#portfolioBlock"></a>
+                    <a class="linkedinHyperLink" href="https://www.linkedin.com/in/charla-bigelow-b17169154/"></a> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="slider bioPage">Some content here....</div>
+        <div class="slider portfolioPage">Some content here....</div>
+
+        
