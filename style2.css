@@ -1,0 +1,141 @@
+* {
+    font-family: sans-serif;
+    color:white;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5em;
+}
+
+body {
+    overflow: hidden;
+}
+
+button {
+    width: 20%;
+    height: 10%;
+    color: black;
+    background-color: rgb(97, 90, 90);
+    
+}
+a {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* p {
+    font-weight: bold;
+    padding: 0 3% 5% 5%;
+    line-height: 21px;
+    font-size: 20px;
+    text-align: left;
+} */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    max-width: 30ch;
+    /* font-size: 1.5em; */
+}
+
+.headerBar {
+    background-color: black;
+    width:100%;
+    flex: 1;
+    position: fixed;
+    display: flex;
+    z-index: 3;
+}
+
+.headerContentContainer {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroImageContainer {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.cootieHero {
+    display: flex;
+    z-index: 2;
+    width: 100vw;
+    flex: 2;
+    align-self: flex-end;
+}
+
+
+.rightTopBio{
+    border: black 2px solid;
+    color: black;
+    height: 50%;
+    width: 50%;
+    z-index: 1;
+}
+
+.leftTopPortfolio{
+    border: black 2px solid;
+    color: black;
+    height: 50%;
+    width: 50%;
+    z-index:1;
+}
+
+.rightBottomGithub{
+    border: black 2px solid;
+    color: black;
+    height: 50%;
+    width: 50%;
+    z-index: 2;
+}
+
+.leftBottomLinked{
+    border: black 2px solid;
+    height: 50%;
+    width: 50%;
+}
+
+
+.footer {
+    background-color: black;
+    width: 100vw;
+    position: fixed;
+    height: 20%;
+}
+    
+/* .mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+} */
+
+/* .heroImageContainer { */
+    /* border: black 3px solid; */
+    /* display: flex;
+    width: 100vw;
+    height: 60vh;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-top: 55%;
+    /* background-image: url("CootiesCaught.png"); */
+    /* background-size: 100%;
+    background-repeat: no-repeat;
+ } */ 
