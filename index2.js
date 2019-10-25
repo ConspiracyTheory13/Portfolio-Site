@@ -1,6 +1,22 @@
-//back to home not working
-//fix css on portfolio page
+//why the fuck is bio only running x2???
 
+const mainPage=`
+
+<img class="cootieHero" src="CootiesCaught.png">            
+<div class="row">
+    <div class="column">
+        <a href="" class="anchorLinks rightTopBio" id="bioLaunch"></a>
+        
+        <a href="" class="anchorLinks leftTopPortfolio" id="portfolioLaunch"></a>
+    </div>
+
+    <div class="column">
+        <a href="https://github.com/ConspiracyTheory13" class="anchorLinks rightBottomGithub"></a>
+        
+        <a href="https://www.linkedin.com/in/conspiracytheory/" class="anchorLinks leftBottomLinked"></a>
+    </div>
+</div>
+</div>`;
 
 const bioBlock =`
 <section class="bioTextBlock" id="bioBlock">
@@ -14,8 +30,7 @@ A recent bootcamp grad from the Web Developer Track through Bloc.io, I am enamor
 the door of opportunity for people of every background. I'm an Oregon native, petrichor obsessed and experience driven.
         I obtained my Bachelor's degree in Social Sciences from Portland State University, and am continuing on to
         achieve my masters.
-    </p>
-        <button class="home" href=".heroImageReload" id="homeButton">Home</button>                                                                          
+    </p> 
 </section>`;
 
 const portfolioBlock =`
@@ -36,7 +51,6 @@ const portfolioBlock =`
             <a id="nextImage"><img class="arrowNav" src="rightarrow.png"></img></a>        
     </div>
     </div>
-        <button class="home" id="homeButton">Home</button>                                                                       
     </div>
 </section>`;
 
@@ -72,26 +86,36 @@ function setImage() {
 const openModalBio = () => {
     $('#pageRenderContainer').html(bioBlock);
     event.preventDefault();
-    console.log("openModalBiofires")
-    document.getElementById("homeButton").addEventListener("click", backToHome);   
+    revealHomeButton();
+    console.log("openModalBiofires");
 };
 
 const openPortfolioModal = () => {
     $('#pageRenderContainer').html(portfolioBlock);
+    revealHomeButton();
     document.getElementById("nextImage").addEventListener("click", nextButton);   
     document.getElementById("previousImage").addEventListener("click", previousButton);       
     event.preventDefault();
-    hideHeaderBar(); 
 };
 
-const hideHeaderBar = () => {
-    $('.headerContentContainer').addClass('hidden');
-}
+//work
+const revealHomeButton = () => {
+    $("#homeButton").removeClass("hidden");       
+};
+
+const hideHomeButton = () => {
+    $('#homeButton').addClass('hidden');
+};
+
+//work
 
 const backToHome = () => {
-    console.log('back to home fires');
-    $('#pageRenderContainer').html(heroImageReload);
-}
+    $('#pageRenderContainer').html(mainPage);
+    hideHomeButton();
+};
 
+$('#pageRenderContainer').html(mainPage);
+
+document.getElementById("homeButton").addEventListener("click", backToHome);   
 document.getElementById("bioLaunch").addEventListener("click", openModalBio);   
 document.getElementById("portfolioLaunch").addEventListener("click", openPortfolioModal);

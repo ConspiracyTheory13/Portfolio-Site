@@ -11,8 +11,7 @@
 p {
     font-weight: bold;
     padding: 0 3% 5% 5%;
-    line-height: 21px;
-    font-size: 1em;
+    font-size: .8em;
     line-height: 1em;
     text-align: left;
 }
@@ -31,6 +30,7 @@ button {
     border: white 1px solid;
     width:35%;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #portfolioBlock {
@@ -40,6 +40,7 @@ button {
 .hidden {
     display: none;
 }
+
 .home {
     font-size: 1em;
 }
