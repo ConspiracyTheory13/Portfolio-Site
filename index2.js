@@ -21,12 +21,17 @@ const bioBlock =`
         <h1>Biography</h1>
         <img class="placeholderProfile" alt="picture of female bodied person with unnaturally colored hair and facial piercings" src="profile.jpg">
         <p>     
-            Salutations, that's just my fancy way of saying "hello". My name is Charla, but feel free to call me Charlotte. 
+            Salutations, that's just my fancy way of saying "hello".<br> My name is Charla, but feel free to call me Charlotte. 
             A recent bootcamp grad from the Web Developer Track through Bloc.io, I am enamored by the way technology opens 
             the door of opportunity for people of every background. I'm an Oregon native, petrichor obsessed and experience driven.
             I obtained my Bachelor's degree in Social Sciences from Portland State University, and am continuing on to
-            achieve my masters.
+            achieve my masters focusing in neuropsychology and neurobiology.
         </p> 
+        <section id="contactInfo" class="contactInfo">
+        <h1>Contact<h1>
+        <h2>Email Address:</h2><a href="xConspiracyTheory13x@gmail.com"> xConspiracyTheory13x@gmail.com</a></br>
+        <a href="https://github.com/ConspiracyTheory13">Github Profile</a><br>
+        <a href="https://www.linkedin.com/in/conspiracytheory/">Linked In Profile</a>
 </section>`;
 
 const portfolioBlock =
@@ -34,7 +39,11 @@ const portfolioBlock =
     <h1>Portfolio</h1>
     <div class="projectOneContainer">
         <header id="projectHeader" class="projectHeader">
-            <h2>Cognition & Mental Heuristics Quiz App</h2>
+            <h2>Cognition & Mental Heuristics Quiz</h2>
+            <h3>Technologies Used: HTML CSS JavaScript Jquery</h3>
+            <p class="projectsTagline">This heuristics app is designed for any user who wants to test their knowledge of human nature. 
+            The development of this app combined two of my passions: coding and human cognition.
+            </p>
                 <div class="linkContainer">
                     <a href="https://conspiracytheory13.github.io/Cognition/">Live</a>
                     <a href="https://github.com/ConspiracyTheory13/Cognition">Repo</a>
@@ -60,11 +69,6 @@ const portfolioImagesArray = [
     { name: 'quizThird', alt: 'image of quiz app question feedback screen',image: 'p1third.png' },
     { name: 'quizFinal', alt: 'image of quiz app final feedback screen', image: 'p1final.png' }
 ];
-
-// const apiImagesArray = [
-//     { name: 'apiStart', image: 'p2firstpage.png'}, 
-//     { name: 'apiSecond', image: 'p2screentwo.png' }, 
-// ];
 
 let currentImage = 0;
 
@@ -103,7 +107,6 @@ const openPortfolioModal = () => {
     event.preventDefault();
 };
 
-//work
 const revealHomeButton = () => {
     $("#homeButton").removeClass("hidden");       
 };
@@ -112,11 +115,10 @@ const hideHomeButton = () => {
     $('#homeButton').addClass('hidden');
 };
 
-//work
 
 const backToHome = () => {
-    $('#pageRenderContainer').html(mainPage);
     hideHomeButton();
+    $('#pageRenderContainer').html(mainPage);
 };
 
 $('#pageRenderContainer').html(mainPage);

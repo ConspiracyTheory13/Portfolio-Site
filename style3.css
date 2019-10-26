@@ -10,10 +10,10 @@
 
 p {
     font-weight: bold;
-    padding: 0 3% 5% 5%;
-    font-size: .8em;
+    /* padding: 2% 0 5% 5%;
+    font-size: 1em;
     line-height: 1em;
-    text-align: left;
+    text-align: left; */
 }
 
 
@@ -31,8 +31,21 @@ button {
     margin-top: 2%;
 }
 
-#portfolioBlock {
-    background-color: black;
+h2 {
+    font-size: 1.2em;
+}
+
+.projectOneContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectsTagLine {
+  font-size: 1em;  
+  text-align: center;
 }
 
 .hidden {
@@ -41,6 +54,7 @@ button {
 
 .home {
     font-size: 1em;
+    width: 20%
 }
 
 .projectHeader {
@@ -126,12 +140,21 @@ button {
     width: 100%;
     z-index: 1;
 }
+.contactInfo {
+    border-top: white 1px solid;
+    font-size: .6em;
+}
 
 .footer {
     background-color: black;
     width: 100vw;
     position: fixed;
     height: 20%;
+    z-index: 3;
+}
+
+#portfolioBlock {
+    background-color: black;
 }
 
 @media screen and (min-width: 800px) {
@@ -142,10 +165,6 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-    h3 {
-        left: 36%;
-        font-size: 1.5em;
-    }
     section {
         margin-top: 5%;
     }
