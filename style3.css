@@ -26,11 +26,9 @@ html, body {
 
 button {
     background-color: black;
-    border-radius: 10%;
-    border: white 1px solid;
-    width:35%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    border: white 3px solid;
+    width: 15%;
+    margin-top: 2%;
 }
 
 #portfolioBlock {

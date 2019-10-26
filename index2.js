@@ -1,36 +1,39 @@
-//why the fuck is bio only running x2???
-
 const mainPage=`
-<img class="cootieHero" alt="image of a paper fortune teller set as page background." src="CootiesCaught.png">            
+<label for="heroImageNavigator"></label>
+<img id="HeroImageNavigator" class="cootieHero" alt="image of a paper fortune teller set as page background." src="CootiesCaught.png">            
     <div class="row">
         <div class="column">
-            <a class="anchorLinks rightTopBio" id="bioLaunch"></a>
+            <label for="biographyLaunch"></label>
+            <a class="anchorLinks rightTopBio" id="biographyLaunch"></a>
+            <label for="portfolioLaunch"></label>
             <a class="anchorLinks leftTopPortfolio" id="portfolioLaunch"></a>
         </div>
     <div class="column">
-        <a href="https://github.com/ConspiracyTheory13" class="anchorLinks rightBottomGithub"></a>
-        <a href="https://www.linkedin.com/in/conspiracytheory/" class="anchorLinks leftBottomLinked"></a>
+        <label for="githubProfileLaunch"></label>
+        <a href="https://github.com/ConspiracyTheory13" id="githubProfileLaunch" class="anchorLinks rightBottomGithub"></a>
+        <label for="linkedinProfileLaunch"></label>
+        <a href="https://www.linkedin.com/in/conspiracytheory/" id="linkedinProfileLaunch" class="anchorLinks leftBottomLinked"></a>
     </div>
 </div>`;
 
 const bioBlock =`
 <section class="bioTextBlock" id="bioBlock">
-    <h1>Biography</h1>
-    <img class="placeholderProfile" src="profile.jpg">
-    <p>     
-        Salutations, that's just my fancy way of saying "hello". My name is Charla, but feel free to call me Charlotte. 
-        A recent bootcamp grad from the Web Developer Track through Bloc.io, I am enamored by the way technology opens 
-        the door of opportunity for people of every background. I'm an Oregon native, petrichor obsessed and experience driven.
-        I obtained my Bachelor's degree in Social Sciences from Portland State University, and am continuing on to
-        achieve my masters.
-    </p> 
+        <h1>Biography</h1>
+        <img class="placeholderProfile" alt="picture of female bodied person with unnaturally colored hair and facial piercings" src="profile.jpg">
+        <p>     
+            Salutations, that's just my fancy way of saying "hello". My name is Charla, but feel free to call me Charlotte. 
+            A recent bootcamp grad from the Web Developer Track through Bloc.io, I am enamored by the way technology opens 
+            the door of opportunity for people of every background. I'm an Oregon native, petrichor obsessed and experience driven.
+            I obtained my Bachelor's degree in Social Sciences from Portland State University, and am continuing on to
+            achieve my masters.
+        </p> 
 </section>`;
 
-const portfolioBlock =`
-<section label for="portfolioBlock" id="portfolioBlock"> 
+const portfolioBlock =
+`<section id="portfolioBlock"> 
     <h1>Portfolio</h1>
     <div class="projectOneContainer">
-        <header id="projectHeader" label for="projectHeader" class="projectHeader">
+        <header id="projectHeader" class="projectHeader">
             <h2>Cognition & Mental Heuristics Quiz App</h2>
                 <div class="linkContainer">
                     <a href="https://conspiracytheory13.github.io/Cognition/">Live</a>
@@ -38,20 +41,24 @@ const portfolioBlock =`
                 </div>
         </header>
 
-    <div class="projectOneImagesContainer">
-        <img class="project1" src="quizappstartscreen.png" id="p1CurrentImage">   
-        <div class="projectFooter">
-            <a id="previousImage"><img class="arrowNav" src="leftarrow.png"></a>
-            <a id="nextImage"><img class="arrowNav" src="rightarrow.png"></a>        
+        <div class="projectOneImagesContainer">
+            <img class="project1" alt="scrollable picture of quiz app images" src="quizappstartscreen.png" id="p1CurrentImage">   
+            <div class="projectFooter">
+                <a id="previousImage"><img alt="left facing arrow denoting previous image" class="arrowNav" src="leftarrow.png"></a>
+                <a id="nextImage"><img alt="right facing arrow denoting previous image" class="arrowNav" src="rightarrow.png"></a>        
+        
+            </div>
         </div>
     </div>
-    </section>`;
+
+</section>
+`;
 
 const portfolioImagesArray = [
-    { name: 'quizStart', image: 'quizappstartscreen.png'}, 
-    { name: 'quizSecond', image: 'p1second.png' }, 
-    { name: 'quizThird', image: 'p1third.png' },
-    { name: 'quizFinal', image: 'p1final.png' }
+    { name: 'quizStart', alt:'image of quiz app start screen', image: 'quizappstartscreen.png'}, 
+    { name: 'quizSecond', alt:'image of quiz app question set up', image: 'p1second.png' }, 
+    { name: 'quizThird', alt: 'image of quiz app question feedback screen',image: 'p1third.png' },
+    { name: 'quizFinal', alt: 'image of quiz app final feedback screen', image: 'p1final.png' }
 ];
 
 // const apiImagesArray = [
@@ -115,5 +122,5 @@ const backToHome = () => {
 $('#pageRenderContainer').html(mainPage);
 
 document.getElementById("homeButton").addEventListener("click", backToHome);   
-document.getElementById("bioLaunch").addEventListener("click", openModalBio);   
+document.getElementById("biographyLaunch").addEventListener("click", openModalBio);   
 document.getElementById("portfolioLaunch").addEventListener("click", openPortfolioModal);
